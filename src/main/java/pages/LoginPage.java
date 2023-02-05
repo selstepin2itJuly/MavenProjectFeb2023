@@ -18,6 +18,12 @@ public class LoginPage {
 	private static Logger log = Logger.getLogger(LoginPage.class);
 	
 	//private WebDriver dr; 
+	
+	/*
+	* constructor method for Login Page
+	*
+	*
+	*/
 	public LoginPage(WebDriver driver)
 	{
 	//	this.dr=driver;
