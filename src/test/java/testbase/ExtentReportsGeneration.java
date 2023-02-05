@@ -21,6 +21,11 @@ public class ExtentReportsGeneration {
 	
 	public static Logger log = Logger.getLogger(ExtentReportsGeneration.class);
 	//ExtentReports extent;
+	/*
+	 * Initialize the extent report
+	 * 
+	 * @param String exeType
+	 */
 	public static void initializeReport(String exeType)
 	{
 		htmlReporter =  new ExtentSparkReporter("./Reports/extentReport.html");
@@ -65,6 +70,10 @@ public class ExtentReportsGeneration {
 	{
 		test=extent.createTest(str);
 	}
+	
+	/*
+	 * completeReport method - Flush method to generate the complete report
+	 */
 	public static void completeReport()
 	{
 		extent.flush();
